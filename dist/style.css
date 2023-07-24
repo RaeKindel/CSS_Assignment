@@ -154,13 +154,13 @@ div ol li{
     overflow: hidden;
     margin: 5% 10% 0% 10%;
     border: 2px solid white;
+    height: 25%;
 }
 .img_container {
-    position: relative;
+    position: absolute;
 }
 .img_container img{
-    width: 100%;
-    height: 200px;
+    width: 100px;
 }
 .span{
     position: absolute;
@@ -203,9 +203,11 @@ div ol li{
 }
 .sect{
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-top: 5%;
+    /*border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
 }
 .container{
     width: 80%;
@@ -229,27 +231,53 @@ div ol li{
 }
 .Fn{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
-.Fn div{
-    width: 50%;
+.Fn input{
+    padding-top: 10px;
 }
 form input{
-    width: 100%;
-    height: 20px;
+    height: 40px;
 }
 .main-wrap div{
     margin-top: 10px;
 }
+.main-wrap input{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid aliceblue;
+    font-weight: bold;
+    justify-content: center;
+    color: black;
+}
 .main-wrap button{
-    width:100%;
-    margin-top: 8px;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: orchid;
+    justify-content: center;
 }
 .nd_main h1{
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    color: aliceblue;
 }
 .nd_main p{
     line-height: 1.6em;
+    font-weight: bolder;
+}
+.nd_main{
+    justify-content:center;
+    margin-bottom: 10px;
 }
 
 /*resume styling*/
@@ -422,6 +450,163 @@ width: 100%;
 position: fixed;
 display: flex;
 }
+/*cardbg styling*/
+
+.card_bg{
+    background-color: rgb(77, 43, 43) ;
+    width:100%;
+    height: 40%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-text{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 1.2em;
+    line-height:1.3em;
+    padding: 50px 20px;
+    gap: 20px;
+}
+.span3{
+     background-color: blue;
+     display: inline-block;
+     border-radius: 3px;
+     color: aliceblue;
+     border: 1px solid sienna;
+}
+.card-text p a{
+    color: rgb(132, 190, 240);
+
+}/*section7 styling*/
+.bg-container{
+    background-color: rgb(235, 160, 126);
+    width: 100%;
+}
+.bg_cont{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head-text{
+      color: maroon;
+      text-align: center;
+      padding-top: 15px;
+      line-height: 2em;
+}
+.head-text h3, p{
+     font-weight:bolder;
+}
+.labels{
+    margin-top: 25px;
+}
+input[type=text],
+input[type=email]{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+label{
+    font-weight: bolder;
+    color: maroon;
+}
+.Label_Text{
+    display: flex;
+    gap: 15px;
+}
+.labels{
+    width: 50%;
+}
+.message{
+    width: 50%;
+    margin-top: 30px;
+}
+textarea{
+    width: 100%;
+     margin-top: 10px;
+}
+.checkbox div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 2%;
+}
+.butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.butt button {
+    background: transparent;
+    border: 1px solid black;
+    font-weight: 600;
+    padding:12px 0px 10px 0px; 
+    width: 30%;
+    color: blue;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/*footer styling*/
+.footer{
+    width: 100%;
+    padding: 100px 15%;
+    background: black;
+    color: rgb(132, 190, 240);
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+.footer div{
+        text-align: center;
+}
+.col_1 a{
+    display: block;
+    text-decoration: none;
+    color: rgb(132, 190, 240);
+    margin-bottom: 10px;
+}
+.footer div h3{
+    font-weight: 2em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.form_butt input{
+    width: 400px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+.form_butt button{
+    background: transparent;
+    border: 1px solid maroon;
+    color: rgb(132, 190, 240);
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+}
+.social_icon{
+    display: flex;
+    margin-top: 30px;
+}
+.icons{
+    margin: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
   
 
 
